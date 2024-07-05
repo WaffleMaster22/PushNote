@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pushover-web:
+    build: .
+    ports:
+      - "5555:5555"
+    environment:
+      - PUSHOVER_TOKEN=aom2u6d973uwhxd8shchojhmioek2c
+      - PUSHOVER_USER_KEY=ux76y4hy4fs9oscfec3t64yshgrdhn
