@@ -1,0 +1,10 @@
+services:
+  PushNote:
+    image: waffle22/pushnote:latest
+    ports:
+      - "5555:5000"
+    environment:
+#Enter your app token and user key from pushover
+      - PUSHOVER_TOKEN= #YOURTOKEN
+      - PUSHOVER_USER_KEY= #YOURKEY
+    command: python app.py
